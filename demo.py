@@ -17,11 +17,11 @@ def main():
 	x = np.concatenate((x_con,x_dis)).reshape((n,1))
 	y = np.concatenate((y_con,y_dis)).reshape((n,1))
 
-	print "Ground Truth = ", gt
-	print "Mixed KSG: I(X:Y) = ", mixed.Mixed_KSG(x,y)
-	print "Partitioning: I(X:Y) = ", mixed.Partitioning(x,y)
-	print "Noisy KSG: I(X:Y) = ", mixed.Noisy_KSG(x,y)
-	print "KSG: I(X:Y) = ", mixed.KSG(x,y)
+	print("Ground Truth = ", gt)
+	print("Mixed KSG: I(X:Y) = ", mixed.Mixed_KSG(x,y))
+	print("Partitioning: I(X:Y) = ", mixed.Partitioning(x,y))
+	print("Noisy KSG: I(X:Y) = ", mixed.Noisy_KSG(x,y))
+	print("KSG: I(X:Y) = ", mixed.KSG(x,y))
 
 if __name__ == '__main__':
 	main()
